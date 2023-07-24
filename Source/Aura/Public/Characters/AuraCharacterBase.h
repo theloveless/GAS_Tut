@@ -20,4 +20,5 @@ protected:
 	
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	TObjectPtr<class USkeletalMeshComponent> Weapon;
+
 };
