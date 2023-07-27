@@ -43,7 +43,7 @@ void AAuraCharacter::InitAbilityActorInfo()
 	check(AuraPlayerState);
 
 	if (AuraPlayerState->GetAbilitySystemComponent() != nullptr) {
-		GetAbilitySystemComponent()->InitAbilityActorInfo(AuraPlayerState, this);
+		AuraPlayerState->GetAbilitySystemComponent()->InitAbilityActorInfo(AuraPlayerState, this);
 		AbilitySystemComponent = AuraPlayerState->GetAbilitySystemComponent();
 		AttributeSet = AuraPlayerState->GetAttributeSet();
 	}

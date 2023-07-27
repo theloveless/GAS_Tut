@@ -2,11 +2,15 @@
 
 
 #include "AbilitySystem/AuraAttributeSet.h"
-#include "AbilitySystem/AuraAbilitySystemComponent.h"
 #include "Net/UnrealNetwork.h"
 
 UAuraAttributeSet::UAuraAttributeSet()
 {
+	//This function is created through the ATTRIBUTE_ACCESSORS macros in the header file
+	InitHealth(100.f);
+	InitMaxHealth(100.f);
+	InitMana(50.f);
+	InitMaxMana(50.f);
 
 }
 
